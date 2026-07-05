@@ -7,7 +7,7 @@
  **
  ** Published       : 05.03.2017
  **
- ** Current version : 2.0
+ ** Current version : 2.1
  **
  ** Developed by    : Jozsef Kiss
  **                   KissCode Systems Kft
@@ -29,8 +29,10 @@
  **                   1.3 - 08.19.2017
  **                   1.4 - 03.19.2018
  **                   Now supports Mysql.
- **                   2.0 - 02.07.2026
+ **                   2.0 - 07.02.2026
  **                   Major refactor.
+ **                   2.1 - 07.04.2026
+ **                   Smaller modifications.
  **
  ** Example command to start this application:
  **   "C:\Program Files\Java\jdk1.8.0_121\bin\java.exe" /

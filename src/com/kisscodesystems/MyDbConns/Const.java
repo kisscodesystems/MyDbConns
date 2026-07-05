@@ -26,7 +26,7 @@ final class Const {
   static final String DOUBLE_SPACE = "" + SPACE_CHAR + SPACE_CHAR;
   static final String SINGLE_SPACE = "" + SPACE_CHAR;
   static final String APP_NAME = "MyDbConns";
-  static final String APP_VERSION = "2.0";
+  static final String APP_VERSION = "2.1";
   static final int APP_MAX_LENGTH_OF_INPUT = 999;
   static final int APP_MAX_LENGTH_OF_SQL = 1000000;
   static final String APP_DATA_BASE_DIR = resolveDataBaseDir();
