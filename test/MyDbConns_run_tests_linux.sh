@@ -14,7 +14,9 @@ BUILD="$ROOT/build/testrun"
 JARS="$ROOT/lib"
 JUNIT="$JARS/junit-4.12.jar"
 HAMCREST="$JARS/hamcrest-core-1.3.jar"
-DRIVER=/opt/dkcs/helper/jars/dbdrivers/OracleJdbc.jar
+# The oracle jdbc driver, the one dependency of these sources. It can be given
+# in the DRIVER environment variable, otherwise it is the one in lib.
+DRIVER="${DRIVER:-$JARS/OracleJdbc.jar}"
 
 rm -rf "$BUILD"
 mkdir -p "$BUILD/main_out" "$BUILD/test_out"

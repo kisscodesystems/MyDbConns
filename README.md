@@ -63,8 +63,15 @@ type. Building is a `javac` compile plus packaging the runnable jar (these comma
 assume the repository root as the working directory):
 
 ```bash
-# Run this:
-./MyDbConns_build.sh
+./MyDbConns_build_linux.sh
+```
+
+```bash
+./MyDbConns_build_macos.sh
+```
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\MyDbConns_build_windows.ps1
 ```
 
 This produces `MyDbConns.jar` in the repository root. To also connect to the other
@@ -92,12 +99,20 @@ java -cp "$DRIVER:MyDbConns.jar" com.kisscodesystems.MyDbConns.MyDbConnsMain int
 
 ### Tests
 
-The regression suite is driven by `test/MyDbConns_run_tests.sh`. It compiles the
+The regression suite is driven by `test/MyDbConns_run_tests_<platform>`. It compiles the
 current sources, then runs the JUnit tests that check the validators, the pure
 helpers and the encrypted connections-file round-trip:
 
 ```bash
-bash test/MyDbConns_run_tests.sh
+bash test/MyDbConns_run_tests_linux.sh
+```
+
+```bash
+bash test/MyDbConns_run_tests_macos.sh
+```
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\test\MyDbConns_run_tests_windows.ps1
 ```
 
 The script needs `junit-4.12.jar` and `hamcrest-core-1.3.jar` (bundled in the
