@@ -5,35 +5,6 @@
  *                   sql client.
  *                   Supports Mysql, Oracle, Mssql, Db2 and Postgresql.
  *
- * Published       : 05.03.2017
- *
- * Current version : 2.1
- *
- * Developed by    : Jozsef Kiss
- *                   KissCode Systems Kft
- *                   <http://www.prdare.com>
- *
- * Changelog       : 1.0 - 04.01.2017
- *                   Initial release.
- *                   1.1 - 04.05.2017
- *                   Htm results contain the binary and long-length contents
- *                     behind a htm link.
- *                   Data visualization has been improved.
- *                   Smaller improvements.
- *                   The oracle jdbc is needed for recompiling because of the
- *                     BFILE datatype!
- *                     (The jdbc driver is usually needed for building
- *                      the connections to the database.)
- *                   1.2 - 05.03.2017
- *                   Oracle BFILE is now deprecated, using OracleBfile instead.
- *                   1.3 - 08.19.2017
- *                   1.4 - 03.19.2018
- *                   Now supports Mysql.
- *                   2.0 - 07.02.2026
- *                   Major refactor.
- *                   2.1 - 07.04.2026
- *                   Smaller modifications.
- *
  * Example command to start this application:
  *   "C:\Program Files\Java\jdk1.8.0_121\bin\java.exe" /
  *   -cp C:\drivers\OracleJdbc.jar;C:\opensourcejava\MyDbConns\MyDbConns.jar /
